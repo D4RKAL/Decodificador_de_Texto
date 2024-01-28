@@ -1,0 +1,68 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    margin-top: 3%;
+    background-color: tomato;
+}
+
+button {
+    display: block;
+    margin: 6% auto;
+}
+
+label {
+    color: rgba(52,52,52,0.3);
+}
+
+#usr_input {
+    width: 20rem;
+    height: 20rem;
+}
+
+#txt_result {
+    width: 20rem;
+    height: 20rem;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #262626;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-end;
+    margin-top: 7%;
+}
+
+#div_result {
+    background-color: aqua;
+    position: relative;
+}
+
+#div_input {
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    position: relative;
+}
