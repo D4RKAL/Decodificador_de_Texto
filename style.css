@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+
 .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-
     margin-top: 3%;
-    background-color: tomato;
+}
+
+.bnt_usr_inp {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 4%;
+    text-align: center;
 }
 
 button {
+    min-width: 100px;
+    margin: 4% auto auto;
+    text-align: center;
+    padding: 3%;
+    border-radius: 10px;
+    border: 2px solid;
+}
+
+input {
     display: block;
-    margin: 6% auto;
+    text-align: center;
+    padding: 3%;
+    min-width: 100px;
+    border-radius: 10px;
+    border: 2px solid;
 }
 
 label {
-    color: rgba(52,52,52,0.3);
+    color: rgb(255, 255, 255);
 }
 
 #usr_input {
@@ -27,8 +48,38 @@ label {
     height: 20rem;
 }
 
+#div_input {
+    display: grid;
+}
+
+#div_result {
+    display: grid;
+}
+
 h1 {
     text-align: center;
+    font-family: 'Jost', monospace;
+    font-size: 40px;
+}
+
+.glow {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation:  glow 2s ease-in-out infinite alternate;
+    color: #ffffff;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #fd2c4b,
+        0 0 30px #fd2c4b, 0 0 40px #fd2c4b, 0 0 50px #fd2c4b,
+        0 0 60px #fd2c4b, 0 0 70px #fd2c4b;
+    }
+    to {
+        text-shadow: 0 0 20px #fd2c4b, 0 0 30px #fd2c4b,
+        0 0 40px #fd2c4b, 0 0 50px #fd2c4b, 0 0 60px #fd2c4b,
+        0 0 70px #fd2c4b, 0 0 80px #fd2c4b;
+    }
 }
 
 body {
@@ -47,22 +98,9 @@ header {
 
 footer {
     display: inline-flex;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
     align-content: flex-end;
-    margin-top: 7%;
-}
-
-#div_result {
-    background-color: aqua;
-    position: relative;
-}
-
-#div_input {
-    background-color: blueviolet;
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    position: relative;
+    font-family: 'Jost', monospace;
+    text-shadow: 1px 1px 2px black;
 }

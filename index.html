@@ -7,22 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <title>Decodificador de Texto</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
-        <h1>Decodificador de Texto</h1>
+        <h1 class="glow">Decodificador de Texto</h1>
     </header>
     <div class="container">
         <div id="div_input">
             <label for="usr_input">Digite o texto a ser codificado</label>
             <textarea name="usr_input" id="usr_input"></textarea>
-            <input type="button" value="Codificar" class="bnt_usr_inp">
-            <input type="button" value="Decodificar" class="bnt_usr_inp">
+            <div class="bnt_usr_inp">
+                <input type="button" value="Codificar" onclick="code()">
+                <input type="button" value="Decodificar">
+            </div>
         </div>
         <div id="div_result">
             <label for="txt_result">Texto codificado</label>
             <textarea name="txt_result" id="txt_result"></textarea>
-            <button>Copy</button>
+            <button>Copiar</button>
         </div>
     </div>
     <footer>
