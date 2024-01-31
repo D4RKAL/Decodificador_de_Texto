@@ -35,7 +35,8 @@ input {
 }
 
 label {
-    color: rgb(255, 255, 255);
+    color: black;
+    text-align: center;
 }
 
 #usr_input {
@@ -60,30 +61,11 @@ h1 {
     text-align: center;
     font-family: 'Jost', monospace;
     font-size: 40px;
-}
-
-.glow {
-    -webkit-animation: glow 2s ease-in-out infinite alternate;
-    -moz-animation: glow 2s ease-in-out infinite alternate;
-    animation:  glow 2s ease-in-out infinite alternate;
-    color: #ffffff;
-}
-
-@-webkit-keyframes glow {
-    from {
-        text-shadow: 0 0 10px #ffffff, 0 0 20px #fd2c4b,
-        0 0 30px #fd2c4b, 0 0 40px #fd2c4b, 0 0 50px #fd2c4b,
-        0 0 60px #fd2c4b, 0 0 70px #fd2c4b;
-    }
-    to {
-        text-shadow: 0 0 20px #fd2c4b, 0 0 30px #fd2c4b,
-        0 0 40px #fd2c4b, 0 0 50px #fd2c4b, 0 0 60px #fd2c4b,
-        0 0 70px #fd2c4b, 0 0 80px #fd2c4b;
-    }
+    color: #0077ff;
 }
 
 body {
-    background-color: #262626;
+    background-color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -102,5 +84,5 @@ footer {
     align-items: flex-start;
     align-content: flex-end;
     font-family: 'Jost', monospace;
-    text-shadow: 1px 1px 2px black;
+    color: #0077ff;
 }
