@@ -2,34 +2,35 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style.css">
-    <title>Decodificador de Texto</title>
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
     <script src="script.js"></script>
+    <title>Decodificador de Texto</title>
 </head>
 <body>
-    <header>
-        <h1>Decodificador de Texto</h1>
-    </header>
-    <div class="container">
-        <div id="div_input">
-            <label for="usr_input">Digite o Texto</label>
-            <textarea name="usr_input" id="usr_input"></textarea>
-            <div class="bnt_usr_inp">
-                <input type="button" value="Codificar" onclick="code()">
-                <input type="button" value="Decodificar" onclick="decode()">
-            </div>
-        </div>
-        <div id="div_result">
-            <label for="txt_result">Resultado</label>
-            <textarea name="txt_result" id="txt_result"></textarea>
-            <button>Copiar</button>
+<header>
+    <h1>Decodificador de Texto</h1>
+</header>
+<div class="container">
+    <div id="div_input">
+        <label for="usr_input">Digite o Texto</label>
+        <textarea id="usr_input" name="usr_input"></textarea>
+        <div class="bnt_usr_inp">
+            <input id="code_button" onclick="code()" type="button" value="Codificar">
+            <input id="decode_button" onclick="decode()" type="button" value="Decodificar">
         </div>
     </div>
-    <footer>
-        <p>&copy;Ygor Costa Martins</p>
-    </footer>
+    <div id="div_result">
+        <label for="txt_result">Resultado</label>
+        <textarea id="txt_result" name="txt_result"></textarea>
+        <button id="copy" onclick="copy()">Copiar</button>
+    </div>
+</div>
+<footer>
+    <p>&copy;Ygor Costa Martins</p>
+</footer>
 </body>
 </html>
