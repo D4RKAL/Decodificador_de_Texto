@@ -20,6 +20,7 @@ function code() {
 
     document.querySelector('#copy').innerHTML = 'Copiar'
     document.querySelector('#txt_result').innerHTML = usrInput.join('');
+    document.querySelector('img').style.display = 'none';
 }
 
 function decode() {
@@ -42,6 +43,7 @@ function decode() {
 
     document.querySelector('#copy').innerHTML = 'Copiar'
     document.querySelector('#txt_result').innerHTML = usrInput.join(' ');
+    document.querySelector('img').style.display = 'none';
 }
 
 function copy() {

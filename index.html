@@ -8,16 +8,17 @@
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" href="/img/favicon.svg" type="image/x-icon">
     <script src="script.js"></script>
-    <title>Decodificador de Texto</title>
+    <title>(DE)Codificador de Texto</title>
 </head>
 <body>
 <header>
-    <h1>Decodificador de Texto</h1>
+    <h1>(DE)Codificador de Texto</h1>
 </header>
 <div class="container">
     <div id="div_input">
         <label for="usr_input">Digite o Texto</label>
         <textarea id="usr_input" name="usr_input"></textarea>
+        <span>*Apenas letras minúsculas, sem acentos e símbolos</span>
         <div class="bnt_usr_inp">
             <input id="code_button" onclick="code()" type="button" value="Codificar">
             <input id="decode_button" onclick="decode()" type="button" value="Decodificar">
@@ -25,12 +26,16 @@
     </div>
     <div id="div_result">
         <label for="txt_result">Resultado</label>
-        <textarea id="txt_result" name="txt_result"></textarea>
+        <div id="img_div">
+            <img src="/img/interrogation.png"
+                 alt="Rapaz pensativo olhando para cima com o dedo indicador apontando para a testa e uma interrogação sob sua cabeça">
+            <textarea id="txt_result" name="txt_result"></textarea>
+        </div>
         <button id="copy" onclick="copy()">Copiar</button>
     </div>
 </div>
 <footer>
-    <p>&copy;Ygor Costa Martins</p>
+    <a href="https://github.com/D4RKAL" target="_blank">&copy;Ygor Costa Martins</a>
 </footer>
 </body>
 </html>
