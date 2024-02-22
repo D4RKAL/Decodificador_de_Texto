@@ -1,3 +1,7 @@
+function formClear() {
+    document.querySelector('#usr_input, #txt_result').value = '';
+}
+
 function code() {
     const substitutions = {
         'a' : 'ai',
@@ -20,7 +24,7 @@ function code() {
 
     document.querySelector('#copy').innerHTML = 'Copiar'
     document.querySelector('#txt_result').innerHTML = usrInput.join('');
-    document.querySelector('img').style.display = 'none';
+    document.querySelector('img').style.display = 'none'
 }
 
 function decode() {

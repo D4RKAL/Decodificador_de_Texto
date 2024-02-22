@@ -18,6 +18,7 @@
 #code_button {
     max-width: 200px;
     width: 140px;
+    height: 45px;
     margin: 4% auto auto;
     text-align: center;
     padding: 10px 20px 10px 20px;
@@ -29,11 +30,17 @@
     font-size: large;
     cursor: pointer;
     color: white;
+    transition: ease-in-out 0.2s;
+}
+
+#code_button:hover {
+    background-color: #00245f;
 }
 
 #decode_button {
     max-width: 200px;
     width: 140px;
+    height: 45px;
     margin: 4% auto auto;
     text-align: center;
     padding: 10px 20px 10px 20px;
@@ -45,11 +52,17 @@
     font-size: large;
     cursor: pointer;
     color: white;
+    transition: ease-in-out 0.2s;
+}
+
+#decode_button:hover {
+    background-color: #00245f;
 }
 
 #copy {
-    min-width: 100px;
-    margin: 7% auto 0 auto;
+    max-width: 100px;
+    width: 50%;
+    margin: 45px auto 0 auto;
     text-align: center;
     padding: 10px 20px 10px 20px;
     border-style: none;
@@ -60,6 +73,11 @@
     font-size: large;
     cursor: pointer;
     color: white;
+    transition: ease-in-out 0.2s;
+}
+
+#copy:hover {
+    background-color: #00245f;
 }
 
 label {
@@ -73,6 +91,7 @@ label {
 textarea {
     width: 350px;
     height: 350px;
+    padding-top: 10px;
     background-color: #171717;
     border-style: solid;
     border-color: #005dff;
@@ -82,10 +101,16 @@ textarea {
     color: #c3c3c3;
     text-align: center;
     resize: none;
+    transition: ease-in-out 0.3s;
 }
 
 textarea:focus {
     outline: none;
+    border-color: white;
+}
+
+textarea:hover{
+    box-shadow: 0 0 10px #005dff;
 }
 
 span {
@@ -97,12 +122,12 @@ span {
 
 #div_input {
     display: grid;
-    margin: 3% 0 0 0;
+    margin: 15px;
     padding: 0;
 }
 
 img {
-    width: 15%;
+    width: 200px;
     position: absolute;
     margin-top: 60px;
 }
@@ -115,7 +140,7 @@ img {
 
 #div_result {
     display: grid;
-    margin: 3% 0 0 0;
+    margin: 15px;
     padding: 0;
     text-align: center;
 }
@@ -148,4 +173,8 @@ footer {
     font-family: 'Jost', monospace;
     color: #5a5a5a;
     margin-top: auto;
+}
+
+a {
+    color: #005dfd;
 }
