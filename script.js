@@ -51,10 +51,9 @@ function decode() {
 }
 
 function copy() {
-    let txtResult = document.querySelector('#txt_result');
-    txtResult.select();
-    txtResult.setSelectionRange(0, 99999);
-    navigator.clipboard.writeText(txtResult.value);
-
+    let txtResult = document.querySelector('#txt_result').value;
+    navigator.clipboard.writeText(txtResult).then(() => {
+        console.log('Copied');
+    });
     document.querySelector('#copy').innerHTML = 'Copiado';
 }

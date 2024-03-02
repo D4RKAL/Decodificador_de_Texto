@@ -23,8 +23,9 @@
     text-align: center;
     padding: 10px 20px 10px 20px;
     border-radius: 30px 0 0 30px;
-    border-style: none;
+    border: none;
     background: #005dff;
+    box-shadow: 0 0 10px #0033ff;
     font-family: 'Jost', monospace;
     font-weight: bolder;
     font-size: large;
@@ -34,7 +35,12 @@
 }
 
 #code_button:hover {
-    background-color: #00245f;
+    background-color: #ff6500;
+    box-shadow: 0 0 20px 2px #ff6500;
+}
+
+#code_button:active {
+    background: #005dff;
 }
 
 #decode_button {
@@ -45,8 +51,9 @@
     text-align: center;
     padding: 10px 20px 10px 20px;
     border-radius: 0 30px 30px 0;
-    border-style: none;
+    border: none;
     background: #005dff;
+    box-shadow: 0 0 10px #0033ff;
     font-family: 'Jost', monospace;
     font-weight: bolder;
     font-size: large;
@@ -56,18 +63,19 @@
 }
 
 #decode_button:hover {
-    background-color: #00245f;
+    background-color: #ff6500;
+    box-shadow: 0 0 20px 2px #ff6500;
 }
 
 #copy {
-    max-width: 100px;
-    width: 50%;
+    width: 30%;
     margin: 45px auto 0 auto;
     text-align: center;
     padding: 10px 20px 10px 20px;
     border-style: none;
     border-radius: 30px;
     background: #005dff;
+    box-shadow: 0 0 10px #0033ff;
     font-family: 'Jost', monospace;
     font-weight: normal;
     font-size: large;
@@ -77,7 +85,8 @@
 }
 
 #copy:hover {
-    background-color: #00245f;
+    background-color: #ff6500;
+    box-shadow: 0 0 20px 2px #ff6500;
 }
 
 label {
@@ -104,13 +113,10 @@ textarea {
     transition: ease-in-out 0.3s;
 }
 
-textarea:focus {
+textarea:focus, textarea:hover {
     outline: none;
     border-color: white;
-}
-
-textarea:hover{
-    box-shadow: 0 0 10px #005dff;
+    box-shadow: 0 0 20px #005dff;
 }
 
 span {
@@ -130,6 +136,7 @@ img {
     width: 200px;
     position: absolute;
     margin-top: 60px;
+    pointer-events: none;
 }
 
 #img_div {
@@ -149,8 +156,18 @@ h1 {
     text-align: center;
     font-family: monospace;
     font-size: 40px;
-    color: #005dfd;
-    text-shadow: #003086 0 0 15px;
+    color: #ffffff;
+    animation: 3s infinite alternate text_glow;
+}
+
+@keyframes text_glow {
+    from {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #00c6ff, 0 0 25px #0033ff;
+    }
+
+    to {
+        text-shadow: 0 0 30px #009dff, 0 0 40px #005eff, 0 0 50px #005eff;
+    }
 }
 
 body {
